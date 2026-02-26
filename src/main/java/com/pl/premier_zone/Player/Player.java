@@ -12,7 +12,7 @@ import jakarta.persistence.Column;
 public class Player {
     // Unique identifier this shows that name is primary key in database becasue we have unique names
     @Id
-    @Column(name = "name", unique = true)
+    @Column(name = "player", unique = true)
     private String name;
     private String nation;
     private String pos;
