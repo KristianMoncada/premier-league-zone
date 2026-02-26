@@ -1,12 +1,14 @@
-package main.java.com.pl.premier_zone.Player;
+package com.pl.premier_zone.Player;
 
-import jakarta.persistance.Entity;
-import jakarta.persistance.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
 // Allows you to connect class to a table
 @Entity
 // Neded because we dont have a table named class
-@Table(name = prem_stats)
+@Table(name = "prem_stats")
 public class Player {
     // Unique identifier this shows that name is primary key in database becasue we have unique names
     @Id

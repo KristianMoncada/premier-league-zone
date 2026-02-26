@@ -1,4 +1,4 @@
-package main.java.com.pl.premier_zone.Player;
+package com.pl.premier_zone.Player;
 
 import java.util.Optional;
 
@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 // Indicates that this is a spring data repository and extends JpaRepository which
 // Provides CRUD for the entiry which is Player and its primary key of String
 @Repository
-public interface PlayerRepoistory extends JpaRepository<Player, String> {
+public interface PlayerRepository extends JpaRepository<Player, String> {
     void deleteByName(String playerName);
-    Optional<Player> findbyName(String name);
+    Optional<Player> findByName(String name);
 }
 
